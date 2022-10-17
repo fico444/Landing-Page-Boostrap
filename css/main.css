@@ -1,0 +1,104 @@
+.header{
+    background-image: url(../img/bg-header.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.imgLogo{
+    width: 40px;
+    height: auto;
+}
+
+.vh50{
+   height: 50vmin;
+}
+/*
+    Seccion Expirience
+*/
+.cardFilter{
+    filter: brightness(0.5);
+}
+
+.card{
+    transition: 0.6s;
+    clip-path: polygon(
+        50% 0,
+        100% 0,
+        100% 50%,
+        100% 100%,
+        50% 100%,
+        0 100%,
+        0 50%,
+        0 0
+        )
+}
+.cardFx:hover >.card{
+    clip-path: polygon(
+    50% 0,
+    50% 0,
+    100% 50%,
+    100% 50%,
+    50% 100%,
+    50% 100%,
+    0 50%,
+    0 50%
+    )
+}
+.card-img-overlay{
+ transition-duration: 0.6s;
+}
+.cardFx:hover .card-img-overlay{
+    transform: scale(0.9);
+}
+
+/*
+    Seccion Comments
+*/
+
+.comments{
+    background-image: url(../img/bg-clients.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.commentImg{
+    --tamaño: 80px;
+    width: var(--tamaño);
+    height: var(--tamaño);
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 7px 7px 7px rgba(0 0 0 /0.5);
+    border: 3px ridge white;
+}
+.cutTransform{
+    transform:rotate(0.5turn);
+}
+
+/*
+    Seccion Inspiration
+*/
+.mediaImg{
+    --tamaño: 65px;
+    width: var(--tamaño);
+    height: var(--tamaño);
+    margin-right: 15px;
+}
+
+/*
+    Carousel
+*/
+.textAlign{
+    top: 35%;
+}
+
+/*
+    Media queries
+*/
+@media (max-width: 375px) {
+    .vh50{
+        height: 50vmax;
+     }
+}
+@media (max-width: 414px) {
+    .vh50{
+        height: 55vmax;
+     }
+}
